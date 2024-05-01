@@ -16,6 +16,7 @@ for roll in range(experimentSize):
     tallies[total]+=1
 
 print(" ... finished rolling. Distribution graph:")
+# display a graph of the tallies; should look somewhat like a triangular "bell curve"
 scale = experimentSize//200
 for i in range(2,13):
     print(f"{i: 3d}: ", end='')

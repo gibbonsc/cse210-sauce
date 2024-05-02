@@ -24,7 +24,7 @@ class Program
             int total = die1 + die2;
             talliesParam[total]++;  // increment the tally for that particular dice sum
         }
-        Console.Write(" ... finished rolling. ");
+        Console.WriteLine(" ... finished rolling. Distribution graph:");
     }
 
     static void DisplayResults(List<int> talliesParam, int quota)

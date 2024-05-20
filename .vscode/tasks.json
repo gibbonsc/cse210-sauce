@@ -4,12 +4,12 @@
     "tasks": [
 
         {
-            "label": "build-sandbox-DiceDistribution",
+            "label": "build-sandbox-Till",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/sandbox/DiceDistribution/DiceDistribution.csproj",
+                "${workspaceFolder}/sandbox/Till/Till.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -256,6 +256,30 @@
             "args": [
                 "build",
                 "${workspaceFolder}/final/Foundation4/Foundation4.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-sandbox-MemorizeApp",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/sandbox/MemorizeApp/MemorizeApp.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-sandbox-DiceDistribution",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/sandbox/DiceDistribution/DiceDistribution.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

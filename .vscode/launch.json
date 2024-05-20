@@ -4,13 +4,13 @@
     "configurations": [
 
         {
-            "name": "DiceDistribution",
+            "name": "Till Project",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build-sandbox-DiceDistribution",
-            "program": "${workspaceFolder}/sandbox/DiceDistribution/bin/Debug/net8.0/DiceDistribution.dll",
+            "preLaunchTask": "build-sandbox-Till",
+            "program": "${workspaceFolder}/sandbox/Till/bin/Debug/net8.0/Till.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/sandbox/DiceDistribution",
+            "cwd": "${workspaceFolder}/sandbox/Till",
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "stopAtEntry": false
@@ -257,6 +257,30 @@
             "program": "${workspaceFolder}/final/Foundation4/bin/Debug/net8.0/Foundation4.dll",
             "args": [],
             "cwd": "${workspaceFolder}/final/Foundation4",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+        {
+            "name": "MemorizeApp",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-sandbox-MemorizeApp",
+            "program": "${workspaceFolder}/sandbox/MemorizeApp/bin/Debug/net8.0/MemorizeApp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sandbox/MemorizeApp",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+        {
+            "name": "DiceDistribution",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-sandbox-DiceDistribution",
+            "program": "${workspaceFolder}/sandbox/DiceDistribution/bin/Debug/net8.0/DiceDistribution.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sandbox/DiceDistribution",
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "stopAtEntry": false

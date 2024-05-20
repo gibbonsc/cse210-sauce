@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>60</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Word
+--
+_word: string
+_revealed: bool
+--
+constructor Word(string)
+Display()
+Hide()
+IsRevealed(): bool
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>10</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Verse
+--
+_wordList: List&lt;word&gt;
+--
+constructor Verse(string)
+Display()
+GetWordCount(): int
+GetRevealedCount(): int
+HideWord(int)
+HideRandomWord()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>210</y>
+      <w>290</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>ScriptureCitation
+--
+_book: string
+_chapter: int
+_firstVerse: int
+_lastVerse: int
+--
+constructor ScriptureCitation(string,int,int)
+constructor ScriptureCitation(string,int,int,int)
+Display()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>380</y>
+      <w>410</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>ScriptureToMemorize
+--
+_reference: ScriptureCitation
+_verses: List&lt;Verse&gt;
+--
+constructor ScriptureToMemorize()
+constructor ScriptureToMemorize(ScriptureCitation,List&lt;Verse&gt;)
+Display()
+HideThreeRandomWords()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>40</y>
+      <w>170</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..n
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;30.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>150</y>
+      <w>90</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>70</x>
+      <y>350</y>
+      <w>130</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=
+</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;60.0</additional_attributes>
+  </element>
+</diagram>

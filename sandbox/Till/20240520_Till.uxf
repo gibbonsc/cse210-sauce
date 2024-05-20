@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>210</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>DenominationBin
+--
+-id: Long
+_-ClassAttribute: Long_
+_id: string
+_valueInCents: int
+_count: int
+--
+DenominationBin(string,int,int)
+
+GetId(): int
+
+SetId(int)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>20</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>CashDrawer
+--
+_bins: DenominationBin[ ]
+--
+CashDrawer()
+
+Transaction(int binIndex, int adjustment)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>20</y>
+      <w>130</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=9
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;30.0</additional_attributes>
+  </element>
+</diagram>

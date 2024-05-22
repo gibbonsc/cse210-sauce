@@ -11,8 +11,6 @@
     </coordinates>
     <panel_attributes>DenominationBin
 --
--id: Long
-_-ClassAttribute: Long_
 _id: string
 _valueInCents: int
 _count: int

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>30</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Timer
+--
+-static _targetTime: DateTime
+--
++static Set(int)
++static IsExpired(): bool
++static PauseWithAnimation(int)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>140</y>
+      <w>130</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>0</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Activity
+--
+-_title: string
+-_desc: string
+-_duration: int
+--
++Activity(string,string)
++GetDuration(): int
++InteractPrologue()
++InteractEpilogue()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>200</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>BreathingActivity
+--
+
+--
++BreathingActivity(string,string)
++InteractBreathing()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>310</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>ReflectionActivity
+--
+
+--
++ListerActivity(string,string)
++InteractLister()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>420</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>ListerActivity
+--
+
+--
++ListerActivity(string,string)
++InteractLister()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>140</y>
+      <w>80</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>140</y>
+      <w>70</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;280.0</additional_attributes>
+  </element>
+</diagram>

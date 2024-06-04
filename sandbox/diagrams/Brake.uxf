@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>30</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Brake
+--
+-_vehicle: Vehicle
+-_heat: double
+-_maxSlowDownRate: double
+--
++SlowDown(vehicle)
++GetHeat(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>230</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>DrumBrake
+--
+-_drum
+-_shoe
+--
++SqueezeCaliper()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>10</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Vehicle
+--
+-_speed: double
+--
++SetSpeed(double)
++GetSpeed(): double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>230</y>
+      <w>120</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>DiscBrake
+--
+-_disc
+--
++CompressDisc()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>230</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>HydraulicBrake
+--
+-_hydraulics
+--
++CompressFluid()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>230</y>
+      <w>150</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>ElectroMagneticBrake
+--
+-_fieldcoil
+-_armature
+--
++Actuate()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>230</y>
+      <w>150</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>ArrestorGear
+--
+-_externalArrestor
+--
++CollideWithArrestor()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>10</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>140</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>180</y>
+      <w>340</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;10.0;320.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>180</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>180</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>180</y>
+      <w>150</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>180</y>
+      <w>270</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;50.0;250.0;10.0</additional_attributes>
+  </element>
+</diagram>

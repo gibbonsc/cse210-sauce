@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>10</y>
+      <w>230</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>MusicalInstrument
+--
+-_minPitch
+-_maxPitch
+--
++MusicalInstrument()
+  {constructor initializes pitch range}
++MakeNoise()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>230</y>
+      <w>130</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>WindInstrument
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>230</y>
+      <w>130</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>StringInstrument
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>230</y>
+      <w>150</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>PercussionInstrument
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>230</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Synthesizer
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>230</y>
+      <w>70</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Voice
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>370</y>
+      <w>150</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>WoodwindInstrument
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>370</y>
+      <w>150</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>BrassInstrument
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>340</y>
+      <w>80</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Theremin
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>130</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>290</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>60</x>
+      <y>290</y>
+      <w>40</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>20.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>130</x>
+      <y>290</y>
+      <w>100</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>170</y>
+      <w>80</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>170</y>
+      <w>290</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;10.0;270.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>170</y>
+      <w>200</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>170</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>70</x>
+      <y>170</y>
+      <w>270</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>250.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+</diagram>

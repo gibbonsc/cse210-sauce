@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>10</y>
+      <w>110</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>UIControl
+--
+-_hidden: bool
+-_leftEdge: int
+-_topEdge: int
+-_width: int
+-_height: int
+--
++Display()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>250</y>
+      <w>130</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Window
+--
+-_TitleText: string
+--
++SetTitle(string)
++GetTitle(): string
++Minimize()
++Maximize()
++Close()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>250</y>
+      <w>140</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Button
+--
+-_ButtonText: string
+--
++SetText(string)
++GetText(): string
++HandleClick()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>250</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Menu
+--
+-_menuOptions: List&lt;string&gt;
+--
++Menu()
+  {constructor initializes options}
++ShowMenu()
++HandleClick()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>250</y>
+      <w>140</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>EditTextField
+--
+-_content: string
+--
++GetContent(): string
++SetContent(string)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>250</y>
+      <w>130</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Label
+--
+-_content: string
+--
++SetContent(string)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>140</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>180</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>180</y>
+      <w>350</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;10.0;330.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>70</x>
+      <y>180</y>
+      <w>350</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;70.0;330.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>180</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;70.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>180</y>
+      <w>220</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;70.0</additional_attributes>
+  </element>
+</diagram>

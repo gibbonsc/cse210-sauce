@@ -274,6 +274,30 @@
             "stopAtEntry": false
         },
         {
+            "name": "GoalApp",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-sandbox-GoalApp",
+            "program": "${workspaceFolder}/sandbox/GoalApp/bin/Debug/net8.0/GoalApp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sandbox/GoalApp",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+        {
+            "name": "MindApp",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-sandbox-MindfulnessApp",
+            "program": "${workspaceFolder}/sandbox/MindApp/bin/Debug/net8.0/MindApp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sandbox/MindApp",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+        {
             "name": "DiceDistribution",
             "type": "coreclr",
             "request": "launch",

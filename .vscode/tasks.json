@@ -309,6 +309,18 @@
             ],
             "problemMatcher": "$msCompile"
         },
+        {
+            "label": "build-sandbox-Wator",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/sandbox/Wator/Wator.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
 
     ]
 }

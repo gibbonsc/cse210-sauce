@@ -309,6 +309,18 @@
             "internalConsoleOptions": "neverOpen",
             "stopAtEntry": false
         },
+        {
+            "name": "Wator",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-sandbox-Wator",
+            "program": "${workspaceFolder}/sandbox/Wator/bin/Debug/net8.0/Wator.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sandbox/Wator",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
 
     ]
 }

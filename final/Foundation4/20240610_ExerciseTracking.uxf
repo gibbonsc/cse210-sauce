@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>10</y>
+      <w>200</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>/Activity/
+--
+#_date: string
+#_minutes: double
+--
+/+GetDistance(): double/
+/+GetSpeed(): double/
+/+GetPace(): double/
+/+GetSummary(): string/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>300</y>
+      <w>160</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Running
+--
+-_distance: double
+--
++GetDistance(): double
++GetSpeed(): double
++GetPace(): double
++GetSummary(): string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>20</y>
+      <w>180</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Program
+--
+_-activities: List&lt;Activity&gt;_
+--
+_+Main()_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>300</y>
+      <w>160</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Cycling
+--
+-_speed: double
+--
++GetDistance(): double
++GetSpeed(): double
++GetPace(): double
++GetSummary(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>300</y>
+      <w>160</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Swimming
+--
+-_laps: uint
+--
++GetDistance(): double
++GetSpeed(): double
++GetPace(): double
++GetSummary(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>190</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>50</x>
+      <y>220</y>
+      <w>250</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>230.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>220</y>
+      <w>40</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>20.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>220</y>
+      <w>190</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;80.0</additional_attributes>
+  </element>
+</diagram>

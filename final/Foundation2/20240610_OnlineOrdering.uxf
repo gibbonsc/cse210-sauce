@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>200</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Order
+--
+-_cart: List&lt;Product&gt;
+-_customer: Customer
+--
++Order(Customer)
++AddItem(Product)
++GetTotalCost(): decimal
++GetPackingLabel(): string
++GetShippingLable(); string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>10</y>
+      <w>150</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Product
+--
+-_name: string
+-_id: string
+-_pricePerUnit: decimal
+-_quantity: int
+--
++GetTotalCost()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>190</x>
+      <y>10</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>190</y>
+      <w>180</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Address
+--
+-_streetAddress: string
+-_city: string
+-_stateProvince: string
+-_country: string
+--
++IsDomesticUSA(): bool
++GetAddressLabel(): string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>140</y>
+      <w>160</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Customer
+--
+-_name: string
+-_address: Address
+--
++IsDomesticUSA(): bool
++GetName(): string
++GetAddress(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>190</x>
+      <y>40</y>
+      <w>150</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>130.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>180</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;20.0;80.0;10.0</additional_attributes>
+  </element>
+</diagram>

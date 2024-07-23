@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>140</y>
+      <w>110</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Circle
+--
+-_radius
+--
++Circle(double)
++Area() : double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>10</y>
+      <w>130</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>/(abstract class)/
+/RoundShape/
+--
+
+--
+/(abstract method)/
+/  +Area() : double/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>290</y>
+      <w>170</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Cylinder
+--
+-_height
+--
++Cylinder(double,double)
++Area() : double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>290</y>
+      <w>120</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Sphere
+--
+
+--
++Sphere(double)
++Area() : double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>100</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>220</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>250</y>
+      <w>90</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>250</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;40.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>240</x>
+      <y>230</y>
+      <w>70</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>π · r ^2
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>280</x>
+      <y>380</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>4 · π · r ^2
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>60</x>
+      <y>380</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>2 · (π · r ^2 + π · r · h)
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>130</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Formulas for
+areas and
+surface areas
+taken from
+WolframAlpha.com
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

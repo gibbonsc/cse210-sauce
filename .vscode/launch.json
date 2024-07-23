@@ -310,6 +310,18 @@
             "stopAtEntry": false
         },
         {
+            "name": "Canvas1",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-sandbox-Canvas1",
+            "program": "${workspaceFolder}/sandbox/Canvas1/bin/Debug/net8.0-windows/Canvas1.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sandbox/Canvas1",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+        {
             "name": "Wator",
             "type": "coreclr",
             "request": "launch",
@@ -317,6 +329,18 @@
             "program": "${workspaceFolder}/sandbox/Wator/bin/Debug/net8.0/Wator.dll",
             "args": [],
             "cwd": "${workspaceFolder}/sandbox/Wator",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+        {
+            "name": "WatorWF",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-sandbox-WatorWF",
+            "program": "${workspaceFolder}/sandbox/WatorWF/bin/Debug/net8.0-Windows/WatorWF.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sandbox/WatorWF",
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "stopAtEntry": false

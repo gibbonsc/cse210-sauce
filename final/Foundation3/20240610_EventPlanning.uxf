@@ -25,8 +25,8 @@
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>300</y>
-      <w>160</w>
+      <y>510</y>
+      <w>210</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>LectureEvent
@@ -34,8 +34,8 @@
 -_speaker: string
 -_capacity: uint
 --
-+GetFullDetails()
-+GetShortDescription()
++GetLectureDetails(): string
++GetLectureShortDesc(): string
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -73,17 +73,17 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>190</x>
-      <y>300</y>
-      <w>160</w>
+      <x>180</x>
+      <y>390</y>
+      <w>220</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>ReceptionEvent
 --
 -_contactRSVP: string
 --
-+GetFullDetails()
-+GetShortDescription()
++GetReceptionDetails(): string
++GetReceptionShortDesc(): string
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -91,16 +91,16 @@
     <id>UMLClass</id>
     <coordinates>
       <x>380</x>
-      <y>300</y>
-      <w>180</w>
+      <y>270</y>
+      <w>210</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>OutdoorEvent
 --
 -_weatherStatement: string
 --
-+GetFullDetails()
-+GetShortDescription()
++GetOutdoorDetails(): string
++GetOutdoorShortDesc(): string
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -121,21 +121,21 @@
       <x>50</x>
       <y>220</y>
       <w>60</w>
-      <h>100</h>
+      <h>310</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>40.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>40.0;10.0;10.0;290.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>80</x>
       <y>220</y>
-      <w>210</w>
-      <h>100</h>
+      <w>200</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>10.0;10.0;190.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;180.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -143,9 +143,9 @@
       <x>80</x>
       <y>220</y>
       <w>410</w>
-      <h>100</h>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>10.0;10.0;390.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;390.0;50.0</additional_attributes>
   </element>
 </diagram>

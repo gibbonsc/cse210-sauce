@@ -345,6 +345,18 @@
             ],
             "problemMatcher": "$msCompile"
         },
+        {
+            "label": "build-sandbox-SliderGame",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/sandbox/SliderGame/SliderGame.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
 
     ]
 }

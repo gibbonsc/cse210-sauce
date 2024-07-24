@@ -345,6 +345,17 @@
             "internalConsoleOptions": "neverOpen",
             "stopAtEntry": false
         },
-
+        {
+            "name": "SliderGame",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-sandbox-SliderGame",
+            "program": "${workspaceFolder}/sandbox/SliderGame/bin/Debug/net8.0/SliderGame.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sandbox/SliderGame",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
     ]
 }
